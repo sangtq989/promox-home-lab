@@ -1,0 +1,32 @@
+#Proxmox credentials
+proxmox_api_url = "https://<proxmox_url>:8006/api2/json"
+proxmox_token_id = "token_id"
+proxmox_token_secret = "token_secret"
+proxmox_node = "proxmox_node_name"
+root_username="vm_root"
+root_password="Pa$$w0rd"
+public_ssh_keys = [
+    "ssh-rsa <first ssh key>+/4qVn3jT8D0325jPJom...",
+    "ssh-rsa <second ssh key>sdasdas+/4qVn3jT8D0325jPJom..."
+]
+
+# vm-config
+gateway4 = "<network gateway for vm>"
+vm_template = "<proxmox VM template name>"
+
+node_types = {
+  master = {core = 1, ram=1024, disk="50G"},
+  worker = {core = 2, ram=1536, disk="50G"},
+  worker-100 = {core = 1, ram=1536, disk="100G"},
+}
+
+nodes = [
+  { name = "zaku", ip_cidr = "<xxx.xxx.xxx.xxx/yy>", type = "master"},
+  { name = "astray", ip_cidr = "<xxx.xxx.xxx.xxx/yy>", type = "worker"},
+  { name = "kryos", ip_cidr = "<xxx.xxx.xxx.xxx/yy>", type = "worker"},
+  { name = "unicorn", ip_cidr = "<xxx.xxx.xxx.xxx/yy>", type = "worker-100"},
+  { name = "providence", ip_cidr = "<xxx.xxx.xxx.xxx/yy>", type = "worker-100"},
+]
+
+
+
