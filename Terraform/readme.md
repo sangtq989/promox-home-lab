@@ -1,4 +1,7 @@
-# Cloud images in Proxmox
+# Proxmox automation
+This folder is the step needed to automate create VM instance in my Promox homelab, using Terraform to provision VM
+
+## Cloud images in Proxmox
 * [Preparing Cloud-Init Templates](https://pve.proxmox.com/pve-docs/qm.1.html)
 
 ### Steps for creating an minimal Ubuntu 20.04 cloud VM template, then using Terraform to finallize
@@ -36,7 +39,7 @@ https://docs.openstack.org/image-guide/convert-images.html
 qemu-img convert -f raw -O qcow2 focal-server-cloudimg-amd64.img focal-server-cloudimg-amd64.qcow2
 ```
 
-# Using Terraform to provision VM
+## Using Terraform to provision VM
 ### Install Terraform
 * [Terraform installation](https://cloud-images.ubuntu.com/focal/current/)
 
